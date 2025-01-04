@@ -1,4 +1,6 @@
 **Introduction**
+
+
 Le projet Digital Banking est une application Java EE (JEE) qui illustre les concepts fondamentaux de la gestion bancaire numérique. L'objectif principal est de développer une plateforme permettant de gérer les comptes bancaires de manière efficace, en mettant l'accent sur deux types de comptes :
 
 Comptes Courants : Permettent des opérations bancaires quotidiennes telles que les dépôts, les retraits, et les virements avec une autorisation de découvert.
