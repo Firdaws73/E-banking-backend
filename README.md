@@ -26,13 +26,15 @@ Ces tables utilisent le moteur de stockage InnoDB et le collationnement ut
 ![image](https://github.com/user-attachments/assets/f939bc3c-5f6f-4044-b0a9-e4a1abd9fc12)
 
 -Récuperation d'un custumor par id.
+
 ![image](https://github.com/user-attachments/assets/8c0bf528-95b6-4ee1-b49f-3a92540468be)
 
 -Modification d'un custumor.
 
 ![image](https://github.com/user-attachments/assets/6683e875-d2fc-48f2-857c-a326af7aed4a)
 
--Suppresion d'un customer
+-Suppresion d'un customer.
+
 ![image](https://github.com/user-attachments/assets/9b460e53-f041-43f6-b388-28e6b2103706)
 
 **On change les données d'un compte :**
