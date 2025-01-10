@@ -9,24 +9,24 @@ L'application met en avant deux types de comptes :
 - **Comptes Courants** : Conçus pour les transactions bancaires quotidiennes (dépôts, retraits, virements) .
 - **Comptes Épargnes** : Dédiés à l'épargne.
 
-**Fonctionnalités Principales**
+1.**Fonctionnalités Principales**
 
-1. **Gestion des Comptes Bancaires** :
+   1. **Gestion des Comptes Bancaires** :
    - Création de comptes courants et épargnes.
    - Affichage des détails d’un compte par son ID.
    - Affichage de la liste de tous les comptes bancaires.
 
-2. **Gestion des Clients** :
+   2. **Gestion des Clients** :
    - Ajout de nouveaux clients.
    - Modification des informations des clients.
    - Suppression de clients.
    - Récupération des détails d’un client par ID.
 
-3. **Gestion des Opérations Bancaires** :
+   3. **Gestion des Opérations Bancaires** :
    - Créditer ou débiter un compte.
    - Historique des opérations de chaque compte.
 
-**Structure de la Base de Données**
+2.**Structure de la Base de Données**
 
 La base de données est structurée autour de trois tables principales :
 
@@ -35,91 +35,41 @@ La base de données est structurée autour de trois tables principales :
 - **`account_operation`** : Enregistrement des transactions (type d’opération, montant, date).
 
 
-2. **Création de la base de données** :
+3. **Création de la base de données** :
    ![image](https://github.com/user-attachments/assets/f9b6971c-7fa9-40f5-940b-13a6706528db)
 
+4. **Création de la base de données** :
 
-3. **Ajoutez les configurations dans `application.properties`** :
-   ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/digital_banking
-   spring.datasource.username=your_username
-   spring.datasource.password=your_password
-   spring.jpa.hibernate.ddl-auto=update
-   ```
+  **Gestion des Clients avec Postman**
+  
+   -**Ajout d’un client:**
 
-4. **Lancez l'application** :
-   ```bash
-   mvn spring-boot:run
-   ```
+![image](https://github.com/user-attachments/assets/e03f2fd3-db22-4bfe-817a-6d9221105252)
 
----
 
-## **Utilisation**
+ -**Récupération d’un client par ID:**
 
-### **Endpoints Clés**
+![image](https://github.com/user-attachments/assets/85852001-2565-43ce-9f06-8710bbdad106)
 
-1. **Gestion des Comptes** :
-   - GET `/accounts` : Liste de tous les comptes.
-   - GET `/accounts/{id}` : Détails d’un compte par ID.
 
-2. **Gestion des Clients** :
-   - POST `/customers` : Ajouter un client.
-   - GET `/customers/{id}` : Récupérer un client.
-   - PUT `/customers/{id}` : Modifier un client.
-   - DELETE `/customers/{id}` : Supprimer un client.
+-**Modification des informations d’un client:**
 
-3. **Opérations Bancaires** :
-   - POST `/accounts/credit` : Créditer un compte.
-   - POST `/accounts/debit` : Débiter un compte.
+![image](https://github.com/user-attachments/assets/26392555-cbfd-4756-9fa6-ebe3a32ba93c)
 
----
+-**Suppression d’un client:**
 
-## **Exemples de Tests avec Postman**
+![image](https://github.com/user-attachments/assets/f812fd84-1aed-42c4-8af3-c1ec9377e329)
 
-1. **Ajouter un client** :
-   - Méthode : POST  
-   - URL : `http://localhost:8085/customers`  
-   - Corps de la requête :
-     ```json
-     {
-         "name": "John Doe",
-         "email": "johndoe@example.com"
-     }
-     ```
 
-2. **Récupérer un client** :
-   - Méthode : GET  
-   - URL : `http://localhost:8085/customers/1`
+**Vérification de l'ajout  des clients  dans la base de données avec swagger-ui:**
 
-3. **Créditer un compte** :
-   - Méthode : POST  
-   - URL : `http://localhost:8085/accounts/credit`  
-   - Corps de la requête :
-     ```json
-     {
-         "accountId": "12345",
-         "amount": 1000
-     }
-     ```
+![image](https://github.com/user-attachments/assets/46578d3e-9e68-4ddf-803b-a0d5fe6d9d07)
 
----
+**Vérification de l'ajout  des clients  dans la base de données avec swagger-ui:**
 
-## **Capture d'Écran**
-
-### Affichage des Comptes
-![Affichage des comptes](https://github.com/user-attachments/assets/caae2d97-6ac5-40ee-8be9-b38c9bcba2e0)
-
-### Gestion avec Postman
-- **Ajout d’un client** :  
-![Ajout d'un client](https://github.com/user-attachments/assets/f939bc3c-5f6f-4044-b0a9-e4a1abd9fc12)
+![image](https://github.com/user-attachments/assets/4bb57b75-ddf8-4574-b65e-153eb77d1043)
 
 ---
 
 ## **Auteur**
-
-**Firdawsse Ahchouche**  
-Projet réalisé dans le cadre de l’apprentissage des concepts de Java EE et des systèmes bancaires numériques.
-
---- 
-
-Avec ce fichier, vos utilisateurs auront une compréhension claire et complète de votre projet !
+**Yahya Sernane**  
