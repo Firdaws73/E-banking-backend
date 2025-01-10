@@ -34,18 +34,17 @@ La base de données est structurée autour de trois tables principales :
 - **`bank_account`** : Détails des comptes bancaires (type, solde, date de création).
 - **`account_operation`** : Enregistrement des transactions (type d’opération, montant, date).
 
-
 3. **Création de la base de données** :
+   
    ![image](https://github.com/user-attachments/assets/f9b6971c-7fa9-40f5-940b-13a6706528db)
 
-4. **Création de la base de données** :
+5. **Création de la base de données** :
 
   **Gestion des Clients avec Postman**
   
    -**Ajout d’un client:**
 
 ![image](https://github.com/user-attachments/assets/e03f2fd3-db22-4bfe-817a-6d9221105252)
-
 
  -**Récupération d’un client par ID:**
 
@@ -69,7 +68,10 @@ La base de données est structurée autour de trois tables principales :
 
 ![image](https://github.com/user-attachments/assets/4bb57b75-ddf8-4574-b65e-153eb77d1043)
 
+
 ---
+**Conclusion:**
+Le projet **Digital Banking** offre une solution intégrale pour la gestion des comptes bancaires, des clients et des transactions financières. S'appuyant sur des technologies telles que Java EE, Hibernate et Spring Boot. Doté de fonctionnalités comme la gestion des comptes courant et d'épargne, le suivi des opérations financières.
 
 ## **Auteur**
 **Yahya Sernane**  
