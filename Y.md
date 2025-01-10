@@ -26,7 +26,7 @@ L'application met en avant deux types de comptes :
    - Créditer ou débiter un compte.
    - Historique des opérations de chaque compte.
 
-## **Structure de la Base de Données**
+**Structure de la Base de Données**
 
 La base de données est structurée autour de trois tables principales :
 
@@ -34,45 +34,10 @@ La base de données est structurée autour de trois tables principales :
 - **`bank_account`** : Détails des comptes bancaires (type, solde, date de création).
 - **`account_operation`** : Enregistrement des transactions (type d’opération, montant, date).
 
-### Exemple de Schéma
-- **Moteur** : InnoDB  
-- **Collation** : utf8_general_ci  
 
----
+2. **Création de la base de données** :
+   ![image](https://github.com/user-attachments/assets/f9b6971c-7fa9-40f5-940b-13a6706528db)
 
-## **Technologies Utilisées**
-
-- **Backend** :
-  - Java EE
-  - Spring Boot
-  - Hibernate (ORM)
-- **Base de Données** :
-  - MySQL (environnement de production)
-  - H2 Database (environnement de test)
-- **Documentation API** :
-  - Swagger/OpenAPI
-- **Outils de Développement** :
-  - Postman pour les tests d’API.
-
----
-
-## **Installation et Configuration**
-
-### **Prérequis**
-- Java 11 ou supérieur
-- Maven 3.6 ou supérieur
-- MySQL 8.x ou supérieur
-
-### **Étapes d'Installation**
-
-1. **Clonez le projet** :
-   ```bash
-   git clone https://github.com/votre-repo/digital-banking.git
-   ```
-
-2. **Configurez la base de données** :
-   - Créez une base de données MySQL nommée `digital_banking`.
-   - Importez le schéma et les données initiales depuis le fichier `schema.sql`.
 
 3. **Ajoutez les configurations dans `application.properties`** :
    ```properties
